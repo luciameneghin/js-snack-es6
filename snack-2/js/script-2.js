@@ -25,12 +25,35 @@ for (let i = 0; i < teams.length; i++) {
 for (let i = 0; i < teams.length; i++) {
   let newPoints = Math.floor((Math.random() * 100) + 1);
   teams[i].points = newPoints
-}
-
-for (let i = 0; i < teams.length; i++) {
   let newFouls = Math.floor((Math.random() * 100) + 1);
   teams[i].fouls = newFouls
 }
 console.log(teams)
 
 
+const newTeams = [];
+
+for (let i = 0; i < teams.length; i++) {
+  newTeams.push({
+    name: teams[i].name,
+    fouls: teams[i].fouls
+  })
+}
+
+// for (let team of teams) {
+//   console.log(`name: ${team.name}, fouls: ${team.fouls}`);
+// };
+console.log(newTeams);
+
+// for (let i = 0; i < teams.length; i++) {
+//   const newTeams = teams[i]
+//   console.log(newTeams.name, newTeams.fouls);
+//   teams.push(teams['name'], teams['fouls'])
+// }
+
+
+// for (let i = 0; i < teams.length; i++) {
+//   newTeams.push(newPoints)
+//   newTeams.push(newFouls)
+//   console.log(newTeams);
+// }
